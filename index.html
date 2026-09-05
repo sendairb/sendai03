@@ -238,57 +238,102 @@
     </div>
   </section>
 
-  <!--
-  スポンサーロゴが確定次第、以下のセクションを再度表示する
   <section id="sponsors" class="sponsors">
     <div class="container">
       <p class="section-label">SPONSORS</p>
       <h2 class="section-title">スポンサー</h2>
-      <p class="section-lead">カンファレンスを一緒につくるパートナーを募集中。一緒に仙台とRubyを盛り上げませんか？</p>
+      <p class="section-lead">仙台Ruby会議 #03を支えてくださるスポンサーの皆様です。</p>
 
-      <div class="sponsors-deadline">
-        <div class="sponsors-deadline__header">
-          <img class="overview-list__icon" src="assets/img/icons/calendar.svg" alt="" aria-hidden="true">
-          <p class="sponsors-deadline__label">スポンサー募集締切</p>
+      <div class="sponsor-tier">
+        <div class="sponsor-tier__heading">
+          <span class="sponsor-tier__label sponsor-tier__label--gold">
+            <svg class="sponsor-tier__icon" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 2h12l4 6-10 10L0 8l4-6zm.9 2L2.4 7.6h4L8 4H4.9zm5.1 0-1.6 3.6h3.2L10 4zm1.6 0 1.6 3.6h4L15.1 4H11.6zM8.1 9.6 10 15.9l1.9-6.3H8.1zm-2.1 0H2.6L8.4 15l-2.4-5.4zm7.9 0-2.4 5.4L17.4 9.6H13.9z" fill="currentColor"/></svg>
+            GOLD
+          </span>
+          <span class="sponsor-tier__divider" aria-hidden="true"></span>
         </div>
-        <p class="sponsors-deadline__date">2026年8月7日<span class="sponsors-deadline__date-day">（金）</span></p>
+        <div class="sponsor-tier__cards sponsor-tier__cards--gold">
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/hacomono.png" alt="株式会社hacomono">
+            </div>
+            <div class="sponsor-card__body">
+              <h3 class="sponsor-card__name">株式会社hacomono</h3>
+              <a class="sponsor-card__url" href="https://www.hacomono.co.jp/" target="_blank" rel="noopener noreferrer">https://www.hacomono.co.jp/</a>
+              <p class="sponsor-card__text">hacomonoは、ウェルネス産業向けに入会・予約・決済・会員管理をデジタル化するVertical SaaS企業です。ジュニアスクールから公共施設まで幅広い業態を支援し、全国11,000店舗以上に導入される産業インフラへ成長しています。2025年1月にシリーズDで46億円を調達し、累計120億円に到達。現在はFinTechやIoT×AIなど6つの戦略領域に投資しています。</p>
+            </div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/ruby-dev.png" alt="株式会社Ruby開発">
+            </div>
+            <div class="sponsor-card__body">
+              <h3 class="sponsor-card__name">株式会社Ruby開発</h3>
+              <a class="sponsor-card__url" href="https://www.ruby-dev.jp/" target="_blank" rel="noopener noreferrer">https://www.ruby-dev.jp/</a>
+              <p class="sponsor-card__text">株式会社Ruby開発は「Ruby×革新技術で豊かな未来を拓く」をミッションに、Ruby on Railsの受託開発と医療・介護分野の自社サービス開発を手がけています。AIを極限まで使い倒し、要件定義から開発・運用までを一気通貫でリード。Rubyコミッター2名が在籍し、Railsの実務経験を“顧客に価値を届ける力”に変えるForward Deployed Engineer（FDE）が活躍しています。</p>
+            </div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/andpad.png" alt="株式会社アンドパッド">
+            </div>
+            <div class="sponsor-card__body">
+              <span class="sponsor-card__badge sponsor-card__badge--omiyage">OMIYAGE Sponsor</span>
+              <h3 class="sponsor-card__name">株式会社アンドパッド</h3>
+              <a class="sponsor-card__url" href="https://andpad.co.jp/" target="_blank" rel="noopener noreferrer">https://andpad.co.jp/</a>
+              <p class="sponsor-card__text">ANDPADは現場効率化から業務改善まで一元管理できるクラウド型建設プロジェクト管理プラットフォームです。26万社、69万人の毎日を支え業界のDX/AI化を加速しています。多くのプロダクトでRuby/Railsを採用しており、Ruby/Railsが建設業界を支えています。アンドパッドではAIにも果敢に挑戦し新しいユーザー体験を提供できるRubyistを歓迎します！</p>
+            </div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/mov.svg" alt="株式会社mov">
+            </div>
+            <div class="sponsor-card__body">
+              <h3 class="sponsor-card__name">株式会社mov</h3>
+              <a class="sponsor-card__url" href="https://mov.am/" target="_blank" rel="noopener noreferrer">https://mov.am/</a>
+              <p class="sponsor-card__text">株式会社movは、「日本のポテンシャルを最大化する」を使命に掲げ、「インバウンド事業」と「店舗支援事業」の2つの事業を展開しています。活気のある日本を取り戻すために、日本の市場、企業、コンテンツを支援し続ける会社です。実直なコンサルティングと、Ruby on Railsを軸にしたプロダクト開発により、着実な成長を遂げています。</p>
+            </div>
+          </article>
+
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/gaji-labo.png" alt="株式会社Gaji-Labo">
+            </div>
+            <div class="sponsor-card__body">
+              <h3 class="sponsor-card__name">株式会社Gaji-Labo</h3>
+              <a class="sponsor-card__url" href="https://www.gaji.jp/" target="_blank" rel="noopener noreferrer">https://www.gaji.jp/</a>
+              <p class="sponsor-card__text">Gaji-Laboは、スタートアップや事業会社のプロダクトチーム支援を専門にしています。UIデザイン、フロントエンド開発、プロダクトマネジメントの専門性を持ったメンバーが、チームの一員としてプロダクトの成長を支援します。急成長期や混乱期は、人手を増やすだけでは乗り越えることができません。専門家としてのスキルを持ち、改善に向けてチームワークを高められるメンバーが必要になったときにご相談ください。</p>
+            </div>
+          </article>
+        </div>
       </div>
 
       <div class="sponsor-tier">
         <div class="sponsor-tier__heading">
-          <span class="sponsor-tier__label sponsor-tier__label--gold">GOLD</span>
+          <span class="sponsor-tier__label sponsor-tier__label--silver">
+            <svg class="sponsor-tier__icon" width="14" height="14" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 2h12l4 6-10 10L0 8l4-6zm.9 2L2.4 7.6h4L8 4H4.9zm5.1 0-1.6 3.6h3.2L10 4zm1.6 0 1.6 3.6h4L15.1 4H11.6zM8.1 9.6 10 15.9l1.9-6.3H8.1zm-2.1 0H2.6L8.4 15l-2.4-5.4zm7.9 0-2.4 5.4L17.4 9.6H13.9z" fill="currentColor"/></svg>
+            SILVER
+          </span>
           <span class="sponsor-tier__divider" aria-hidden="true"></span>
         </div>
-        <div class="sponsor-tier__logos sponsor-tier__logos--gold">
-          <div class="sponsor-logo sponsor-logo--gold">Your Logo Here</div>
-          <div class="sponsor-logo sponsor-logo--gold">Your Logo Here</div>
+        <div class="sponsor-tier__cards sponsor-tier__cards--silver">
+          <article class="sponsor-card">
+            <div class="sponsor-card__logo-frame">
+              <img class="sponsor-card__logo" src="assets/img/sponsors/kcs-carrot.png" alt="株式会社ケーシーエスキャロット">
+            </div>
+            <div class="sponsor-card__body">
+              <h3 class="sponsor-card__name">株式会社ケーシーエスキャロット</h3>
+              <a class="sponsor-card__url" href="https://www.carrot.co.jp/" target="_blank" rel="noopener noreferrer">https://www.carrot.co.jp/</a>
+              <p class="sponsor-card__text">株式会社ケーシーエスキャロットは、組込みからWebまで手がける独立系ソフトウェアハウスです。仙台Ruby会議03には弊社の仙台メンバーも実行委員として参加しています。リモートで一緒に働く仲間を募集しています。</p>
+            </div>
+          </article>
         </div>
-      </div>
-
-      <div class="sponsor-tier">
-        <div class="sponsor-tier__heading">
-          <span class="sponsor-tier__label sponsor-tier__label--silver">SILVER</span>
-          <span class="sponsor-tier__divider" aria-hidden="true"></span>
-        </div>
-        <div class="sponsor-tier__logos sponsor-tier__logos--silver">
-          <div class="sponsor-logo">Your Logo</div>
-          <div class="sponsor-logo">Your Logo</div>
-          <div class="sponsor-logo">Your Logo</div>
-        </div>
-      </div>
-
-      <div class="sponsors-cta-group">
-        <a class="sponsors-cta" href="documents/sponsorship_requirements.pdf" target="_blank" rel="noopener noreferrer">
-          スポンサー募集要項を見る
-        </a>
-        <a class="sponsors-cta" href="https://forms.gle/KbChoy4L6a4SaeCH8" target="_blank" rel="noopener noreferrer">
-          スポンサー申し込みをする
-          <img src="assets/img/icons/external-link.svg" alt="" width="24" height="24" aria-hidden="true">
-        </a>
       </div>
     </div>
   </section>
-  -->
 
 </main>
 
