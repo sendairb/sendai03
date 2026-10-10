@@ -662,6 +662,134 @@ section {
 }
 
 /* ---------------------------------------------
+   Timetable
+--------------------------------------------- */
+.timetable {
+  padding-block: 80px;
+}
+
+#timetable .section-label {
+  font-size: 0.75rem;
+}
+
+#timetable .section-lead {
+  margin-bottom: 48px;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: #4d4d4d;
+}
+
+.timetable-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timetable-row {
+  display: grid;
+  grid-template-columns: 208px 1fr;
+  gap: 0;
+  align-items: center;
+}
+
+.timetable-row__time {
+  padding: 0 26px 0 0;
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: #161616;
+  white-space: nowrap;
+}
+
+.timetable-session {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 16px 26px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.timetable-session__label {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.timetable-session__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.timetable-session__avatar {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(209, 26, 42, 0.08);
+}
+
+.timetable-session__body {
+  min-width: 0;
+}
+
+.timetable-session__title {
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #161616;
+}
+
+.timetable-session__speaker {
+  margin-top: 8px;
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #161616;
+}
+
+.timetable-session--special {
+  background: #fff3f4;
+  border-color: #f3c7cd;
+}
+
+.timetable-session--special .timetable-session__avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.timetable-session__heart {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+}
+
+.timetable-session--break {
+  background: #f1f1f2;
+  border: 0;
+  color: #4d4d4d;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 16px 26px;
+}
+
+/* ---------------------------------------------
    Overview / Access
 --------------------------------------------- */
 .overview {
@@ -1552,6 +1680,38 @@ section {
   }
   .speaker-card__name {
     font-size: 1.5rem;
+  }
+
+  /* Timetable */
+  .timetable {
+    padding-block: 40px 60px;
+  }
+  .timetable-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .timetable-row__time {
+    padding: 8px 4px 0;
+    font-size: 1.25rem;
+  }
+  .timetable-session {
+    padding: 20px 20px;
+  }
+  .timetable-session__avatar {
+    width: 56px;
+    height: 56px;
+  }
+  .timetable-session__title {
+    font-size: 1.125rem;
+  }
+  .timetable-session__speaker {
+    font-size: 0.9375rem;
+  }
+  .timetable-session__label {
+    font-size: 0.875rem;
+  }
+  .timetable-session--break {
+    padding: 16px 20px;
   }
 
   /* Overview */
